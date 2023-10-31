@@ -6,7 +6,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-
 <div class="container-fluid p-5 bg-primary text-white text-center">
      <h1><mark>Bootstrap Framework</mark></h1><br>  
     <h1><mark>Login</mark></h1>
@@ -15,13 +14,10 @@
             <input type="password" id="password" placeholder="Password" required=""><br>
             <button type="submit">Login</button>
         </form>
-        <p>Don't have an account? <a href="file:///C:/Users/gonun/Downloads/index.html#" onclick="showRegistration()"><mark>Register here</mark></a></p>
+        <p>Don't have an account? <a href="#" onclick="showRegistration()"><mark>Register here</mark></a></p>
     </div>
-
-
 	<div  class="text-white text-center bg-success">
         <h1><mark>Register</mark></h1>
-
         <form onsubmit="return register()">
             <input type="text" id="regUsername" placeholder="Username" required=""><br>
             <input type="password" id="regPassword" placeholder="Password" required=""><br>
@@ -29,52 +25,52 @@
             <input type="email" id="email" placeholder="email" required=""><br>
             <button type="submit">Register</button>
         </form>
-
-        <p>Already have an account? <a href="file:///C:/Users/gonun/Downloads/index.html#" onclick="showLogin()"><mark>Login here</mark></a></p>
+        <p>Already have an account? <a href="#" onclick="showLogin()"><mark>Login here</mark></a></p>
     </div>
-	<div id="main-section" class="hiden">
+	<div class="text-white text-center">
         <h1><mark>Shopping Cart</mark></h1>
-	<div class="products">
+	<div class="text-bg-primary text-white text-center">
         <div class="text-bg-info text-center">
             <h2>SMART WATCH</h2>
-            <img src="watch.png" class="rounded" width="200px" height="200px">
+            <img src="images/watch.png" class="rounded" width="200px" height="200px">
             <p>SMART WATCH that has many of the features of a smartphone or a computer:
                 Buy the latest smartwatches from the leading brands in our new wearable technology range</p>
             <p>Price: $2500</p>
             <button class="add-to-cart" onclick="addToCart('SMART WATCH', 2500)">Add to Cart</button>
         </div>
+    </div>
 
         <div class="text-bg-warning text-center">
             <h2>SHOE</h2>
-            <img src="shoe.png" class="rounded-circle" width="200px" height="200px">
+            <img src="images/shoe.png" class="rounded-circle" width="200px" height="200px">
             <p>Buy Metro Shoes online in India. Select from a huge variety of stylish shoes for men, women & kids at the best prices.</p>
             <p>Price: $1800</p>
             <button class="add-to-cart" onclick="addToCart('SHOE', 1800)">Add to Cart</button>
         </div>
         <div class="text-bg-danger text-center">
             <h2>SAREE</h2>
-            <img src="saree.png" class="img-thumbnail" width="200px" height="200px">
+            <img src="images/saree.png" class="img-thumbnail" width="200px" height="200px">
             <p>Buy latest designer sarees online at best price. Shop for best quality of cotton sarees, silk sarees, georgette sarees and many more only at Peachmode.</p>
             <p>Price: $1500</p>
             <button class="add-to-cart" onclick="addToCart('SAREE', 1500)">Add to Cart</button>
         </div>
         <div class="text-bg-secondary text-center">
             <h2>WESTERN WEAR</h2>
-            <img src="western.png" class="rounded" width="200px" height="200px">
+            <img src="images/western.png" class="rounded" width="200px" height="200px">
             <p>WESTERN WEAR Dress For Women: Choose from a wide range of latest western wear for women online.</p>
             <p>Price: $800</p>
             <button class="add-to-cart" onclick="addToCart('WESTERN WEAR',800)">Add to Cart</button>
         </div>
         <div class="text-bg-dark text-center">
             <h2>KURTI</h2>
-            <img src="kurti.png" class="img-thumbnail" width="200px" height="200px">
+            <img src="images/kurti.png" class="img-thumbnail" width="200px" height="200px">
             <p>KURTI Buy stylish Kurtis from wide range in online.Shop for trendiest Kurtis at lowest prices & stunning </p>
             <p>Price: $900</p>
             <button class="add-to-cart" onclick="addToCart('KURTI', 900)">Add to Cart</button>
         </div>
     	</div>
 
-        <div class="cart">
+        <div class="text-bg-warning">
             <h2><mark>Shopping Cart Items</mark></h2>
             <ul id="cart-items"></ul>
             <p>Total: $<span id="total">0</span></p>
@@ -105,16 +101,10 @@ function updateCart() {
 
     totalElement.innerText = total;
 }
-
-
-
-
 // Add product and cart logic similar to the previous example
 
 function checksout() {
     alert('Thank you for your Purchase')
 }
 </script>
-
-
 </body></html>
